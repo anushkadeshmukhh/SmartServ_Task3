@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #E6E7E6;
+            overflow: hidden;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .dashboard-section {
+            flex: 1;
+            background-color: #E6E7E6;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-with-padding {
+            margin-left: 20px  #57c4a2;
+        }
+
+        .graph-card {
+            height: 300px;
+            overflow-x: auto;
+        }
+
+        .bar-graph {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Section 1: Company Metrics -->
+        <div class="dashboard-section">
+            
+            <div class="row">
+                <div class="card card-with-padding" >
+                    <h3>Total Revenue</h3>
+                    <p>$10,000</p>
+                </div>
+                <div class="card card-with-padding" >
+                    <h3>Total Revenue</h3>
+                    <p>$10,000</p>
+                </div>
+                <div class="card card-with-padding" >
+                    <h3>Total Revenue</h3>
+                    <p>$10,000</p>
+                </div>
+                <div class="card card-with-padding" >
+                    <h3>Total Revenue</h3>
+                    <p>$10,000</p>
+                </div>
+            </div>
+            <!-- Add similar cards for other metrics -->
+        </div>
+
+        <!-- Section 2: Revenue by Job Location -->
+        <div class="dashboard-section">
+            <div class="card graph-card">
+                <h3>Revenue by Job Location</h3>
+                <div class="bar-graph" style="background-color: #57C4A2;"></div>
+            </div>
+            <!-- Add similar graph cards for other metrics -->
+        </div>
+    </div>
+
+    <!-- Include your JavaScript libraries for dynamic charts here -->
+</body>
+</html>
